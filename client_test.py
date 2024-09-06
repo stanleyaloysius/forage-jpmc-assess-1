@@ -16,6 +16,12 @@ class ClientTest(unittest.TestCase):
     ]
     """ ------------ Add the assertion below ------------ """
 
+  def test_getDataPoint_UnavailableStock(self):
+    quotes = [
+      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'BCA'},
+      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+    ]
+    """ ------------ Add the assertion below ------------ """
 
   """ ------------ Add more unit tests ------------ """
 
